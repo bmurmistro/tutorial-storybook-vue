@@ -21,8 +21,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
-      - name: Storybook run
+      - name: Install
         run: npm install
+      - name: Eyes
         run: npx eyes-storybook
     
   batch-completion-notification:
