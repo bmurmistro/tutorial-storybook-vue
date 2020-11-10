@@ -19,7 +19,7 @@ storiesOf('Button', module)
   }))
   .add('with some emoji', () => ({
     components: { MyButton },
-    template: '<my-button @click="action">😀 😎 👍 💯</my-button>',
+    template: '<my-button @click="action">😀 😎 👍 </my-button>',
     methods: { action: linkTo('clicked') },
   }));
 
